@@ -1,0 +1,272 @@
+C workshop:
+	Programming:
+		to give solution for requirement/ issue/ problem
+	software>> solution
+
+	System software/ hardware controller:
+		Operating Systems
+		Drivers
+		Compilers
+		frameworks
+		gaming consoles
+		firmware
+		
+
+	application software:
+		eg: insta, fb, WhatsApp, ms word, gmail,
+		desktop applications: games, vlc, bgmi, WhatsApp
+
+		Web application: gmail, amazon, youtube, twitter, insta, fb,....
+
+		Mobile applications: insta, fb, gmail, game, spotify 
+
+		IoT applications: home automation, industry automation
+		
+
+tools:
+turbo 
+vs code
+mingw
+code blocks
+eclipse
+online gdb compiler
+
+		
+coding:
+	data :
+		format and size
+			variables using data types: int, float, double, char
+	Operation
+
+
+
+https://github.com/razzaksr/MEC-2024-C-A
+
+
+Task 1:
+Team A: Purchase Order:
+	customerName, customerAddress, itemName, modeOfPurchase
+	itemPrice, contactNumber
+Team B: EB customer care:
+	consumerName, consumerNumber, contactNumber, issue, email
+Team C: Voter ID application:
+	applicantName, constituencyNumber, applicantAddress, contactNumber, age, email
+
+Task 2:
+Team A: SIP
+Team B: SWP
+Team C: Housing loan with floating interest
+
+
+Control statements:
+if:
+
+if(){}
+
+if(){}else{}
+
+if(){}else if(){}......else{}
+
+if(){if(){}}
+
+switch
+
+
+Loop statements:
+repeating the process
+reduce complexity by avoid the same repeated lines 
+
+loop:
+initialization>> start	>> multiple initialization
+condition	> end	>> single/multiple
+iteration		> step up>> linear/ dynamic
+
+//init
+while(condition){
+// logic
+// iter
+}
+
+
+//init
+do{
+// logic
+// iter
+}while(condition);
+
+for(init;cond;iter){
+// logic
+}
+
+
+task:
+find the maximum value in the series of 20 inputs using loop
+
+fMax, sMax
+110         99
+90 110 67 12 65 34 10 78 99
+                                              c
+
+
+Nested Loop:
+
+loop1: init, cond,iter
+	logic of loop1
+	loop2: init, vond, iter
+		logic of loop2
+
+
+number=11
+
+1 X 2 = (1*2)>> 2
+2 X 2 =(2*2)>> 4
+3 X 2 =(3*2)>> 6
+.
+.
+.
+10 X 2=(10*2)>> 20
+
+	
+
+to compile:
+alt+f9
+
+to run:
+ctrl+f9
+
+to see the output:
+alt+f5
+
+
+#include<stdio.h>
+
+void main(){
+    int coach=1, ticket=0;
+    while(coach<=4){
+        printf("\n%d coach of the day arrived at the bay",
+        coach);
+        int time=1, seats=20;
+        while(time<=10&&seats>0){
+            printf("\nEnter the number of seats required ");
+            scanf("%d",&ticket);
+            if(ticket<=seats){
+                printf("\n%d of seats are booked @ %d",
+                ticket,coach);
+                seats-=ticket;
+            }
+            else{
+                printf("\n%d seats are available %d",
+                seats,coach);
+            }
+            time++;
+        }
+        coach++;
+ 
+   }
+}
+
+
+// left lower floyd
+#####
+####
+###
+##
+#
+
+
+
+
+Pilers of C programming:
+
+Functions
+Arrays
+Pointers
+User defined types
+Files
+
+
+Functions:
+	Logic of code to be executed when the call made
+
+function types:
+	param and return
+	param and no return
+	no param and no return
+	no param and return
+
+
+1. write the definition of the function
+2. then make a call in the main
+
+
+cprogram.c
+
+compile the code:
+gcc filename.c
+
+>> a.exe
+
+run the code:
+./a.exe
+
+
+
+recursive functions:
+
+function1(){
+....
+...logic
+function1();
+}
+
+
+main(){
+function1();
+}
+
+
+Using recursion:
+SIP
+Loan interest calculation
+multiplication tables
+factorial
+Fibonacci
+no of debits in recent transactions
+
+
+
+
+Array:
+Storage logic where to keep multiple data under one reference/ variable.
+
+to reduce time complexity
+
+double package = 8.9,12.5,1.2;
+
+syntax:
+datatype var_name[size];
+datatype var_name[size]={v1,v2,v3,v4,.......};
+
+index>> 0 ... Size-1
+
+size=10
+index>> 0....9
+
+
+
+char myName[20]="Razak Mohamed S";
+char myName[20]={'R','a','z','a','k',' ','M','o','h','a','m','e','d',' ','S'};
+double salary[8]={8.9,12.5,1.2,8.9,3.4,10.4,22.5,9.2};
+
+
+
+Array:
+Stack Implementation
+Queue implementation
+LinkedList implementation
+Linear search
+Binary search
+Array as function parameter and return type
+CRUD Operations using functions
+Sorting: selection, quick sort
+No of debits in recent transactions
